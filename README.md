@@ -2,6 +2,8 @@
 
 Este projeto é uma aplicação web para o **Melodia**, uma plataforma de música que oferece uma experiência premium aos seus usuários. O objetivo principal é promover a assinatura premium, bem como destacar os serviços e diferenciais do aplicativo.
 
+**Link:** https://cp-front-02-03.vercel.app/
+
 ## Integrantes da Equipe
 
 - **Pedro de Lorenzo** - RM554720
@@ -38,3 +40,4 @@ Este projeto é uma aplicação web para o **Melodia**, uma plataforma de músic
 1. Clone o repositório para sua máquina local:
    ```bash
    git clone https://github.com/PedroLorenzop/cpfront5.git
+
