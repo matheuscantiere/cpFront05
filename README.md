@@ -33,11 +33,11 @@ Este projeto é uma aplicação web para o **Melodia**, uma plataforma de músic
 
 - `index.html`: Estrutura principal do site.
 - `style.scss`: Arquivo de estilos Sass, responsável pela aparência do site.
-- `scripts.js`: Lógica para validação de formulários e efeitos de interação.
+- `script.js`: Lógica para validação de formulários e efeitos de interação.
   
 ## Como Executar
 
 1. Clone o repositório para sua máquina local:
    ```bash
-   git clone https://github.com/PedroLorenzop/cpfront5.git
+   https://github.com/matheuscantiere/cpFront05.git
 
