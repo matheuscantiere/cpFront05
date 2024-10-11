@@ -17,6 +17,7 @@ body {
   top: 0;
   width: 100%;
   z-index: 1000;
+  flex-wrap: wrap; /* Responsivo */
 }
 
 .logo {
@@ -25,6 +26,7 @@ body {
   color: #fff;
 }
 .logo img {
+  margin-left: 20px;
   width: 40px;
   margin-right: 10px;
 }
@@ -37,6 +39,7 @@ body {
   list-style: none;
   display: flex;
   gap: 20px;
+  flex-wrap: wrap; /* Ajuste responsivo para mobile */
 }
 .nav-links li a {
   color: #fff;
@@ -50,6 +53,7 @@ body {
 .nav-links .profile {
   display: flex;
   align-items: center;
+  margin-right: 20px;
 }
 .nav-links .profile a {
   display: flex;
@@ -63,60 +67,79 @@ body {
   border-radius: 50%;
   margin-right: 8px;
 }
-.nav-links .profile a i {
-  margin-left: 5px;
-}
 .nav-links .profile a:hover {
   color: #f5a623;
 }
 
+.hero-image{
+  width: 50%;
+  margin-top: 3%;
+}
+
+.listen-image{
+  width: 3%;
+}
+
 .promo-banner {
-  background-color: #f5a623;
+  background-color: #000000;
   color: #fff;
   padding: 80px 20px;
-  text-align: center;
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: space-between; /* Distribui bem entre imagem e texto */
+  flex-direction: row-reverse; /* Inverte a ordem, colocando a imagem à direita */
+  text-align: left; /* Alinha o texto à esquerda */
+} 
+
+.promo-banner .promo-content {
+  width: 50%;
+  padding-right: 20px;
 }
+
 .promo-banner h1 {
   font-size: 3rem;
   margin-bottom: 20px;
 }
+
 .promo-banner p {
   font-size: 1.2rem;
   margin-bottom: 30px;
   max-width: 600px;
 }
+
 .promo-banner .btn {
   background-color: #e59420;
   color: #fff;
   padding: 15px 30px;
   font-size: 1.2rem;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 50px;
   transition: background-color 0.3s ease;
 }
+
 .promo-banner .btn:hover {
   background-color: rgb(188.0722891566, 119.7590361446, 21.9277108434);
-}
+}  	
 
 #services {
   padding: 50px 20px;
   background-color: #222;
+  display: flex;
+  flex-wrap: wrap; /* Responsivo */
+  justify-content: center;
 }
 #services h2 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 30px;
+  width: 100%; /* Responsivo */
 }
 #services .services-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsivo */
   gap: 20px;
   max-width: 1200px;
-  margin: 0 auto;
+  width: 100%;
 }
 #services .services-grid .service-item {
   background-color: #111;
@@ -130,7 +153,7 @@ body {
   color: #f5a623;
 }
 #services .services-grid .service-item p {
-  color: hsl(0, 0%, 120%);
+  color: #fff;
 }
 
 #testimonials {
@@ -144,20 +167,24 @@ body {
 }
 #testimonials .testimonial-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  max-width: 1200px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsivo */
+  gap: 30px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 #testimonials .testimonial-grid .testimonial-item {
-  background-color: #222;
+  background-color: #fafafa;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
 }
+#testimonials .testimonial-grid .testimonial-item img {
+  max-width: 100%;
+  margin-bottom: 15px;
+}
 #testimonials .testimonial-grid .testimonial-item p {
   font-size: 1.1rem;
-  color: hsl(0, 0%, 110%);
+  color: #000000;
 }
 
 #differentials {
@@ -244,5 +271,3 @@ footer {
 footer p {
   margin: 0;
 }
-
-/*# sourceMappingURL=style.css.map */
